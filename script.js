@@ -215,3 +215,101 @@ fetch("http://127.0.0.1:5000/api/upload", {
     });
 
 });
+});
+// ===============================
+// YOUR PROGRESS
+// ===============================
+
+let progress = {
+    flashcardsCompleted: 0,
+    quizzesCompleted: 0,
+    questionsAnswered: 0,
+    score:0
+};
+
+function updateProgress() {
+
+    document.getElementById("flashcardsCompleted").textContent =
+        "Flashcards Completed: " + progress.flashcardsCompleted;
+
+    document.getElementById("quizzesCompleted").textContent =
+        "Quizzes Completed: " + progress.quizzesCompleted;
+
+    document.getElementById("questionsAnswered").textContent =
+        "Questions Answered: " + progress.questionsAnswered;
+    
+    document.getElementById("score").textContent =
+    "Score: " + progress.score;
+}
+
+updateProgress();
+// ===============================
+// TOPICS FROM YOUR NOTES
+// ===============================
+
+function showTopicsFromNotes(topics) {
+
+    const topicsList = document.getElementById("topicsList");
+
+    topicsList.innerHTML = "";
+
+    if (!topics || topics.length === 0) {
+        topicsList.innerHTML = "<p>No topics found yet.</p>";
+        return;
+    }
+
+    topics.forEach(function(topic) {
+
+        const topicElement = document.createElement("div");
+
+        topicElement.className = "topic-item";
+
+        topicElement.textContent = "📌 " + topic;
+
+        topicsList.appendChild(topicElement);
+    });
+}
+
+// Example topics
+showTopicsFromNotes([
+    "Francis Turbine",
+    "Pelton Wheel",
+    "Centrifugal Pump"
+]);
+// ===============================
+// REVISION SUGGESTIONS
+// ===============================
+
+function showRevisionSuggestions(suggestions) {
+
+    const revisionList = document.getElementById("revisionList");
+
+    if (!revisionList) return;
+
+    revisionList.innerHTML = "";
+
+    if (!suggestions || suggestions.length === 0) {
+        revisionList.innerHTML =
+            "<p>No revision suggestions yet.</p>";
+        return;
+    }
+
+    suggestions.forEach(function(suggestion) {
+
+        const revisionItem = document.createElement("div");
+
+        revisionItem.className = "revision-item";
+
+        revisionItem.textContent = "📖 " + suggestion;
+
+        revisionList.appendChild(revisionItem);
+    });
+}
+
+
+// Test revision suggestions
+showRevisionSuggestions([
+    "Revise Francis Turbine principles",
+    "Review Pelton Wheel",
+    "Practice Centrifugal Pump questions"
+]);
