@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn From Your Notes</title>
+    <link rel="stylesheet"href="style.css">
+</head>
+<body>
+  <div class="container">
+
+    <h1> LEARN FROM YOUR NOTES..!!</h1>
+
+    <h2>Learn Smarter. Learn Faster.</h2>
+
+    <p>Turn your notes into active learning.</p>
+    <div class="upload-box">
+
+    <h3>📄 Upload Your Notes</h3>
+
+    <p>Upload your study material in PDF or TXT format.</p>
+
+    <input type="file" id="notesFile" accept=".pdf,.txt">
+
+  </div> 
+    <h2>Choose a learning activity</h2>
+    <div class="activity-card">
+
+    <h3>🃏 Flashcards</h3>
+
+    <p>Review important concepts from your notes.</p>
+
+    <button id="flashcardBtn">Start Flashcards</button>
+
+  </div>
+    <div class="activity-card">
+
+    <h3>📝 Practice Quiz</h3>
+
+    <p>Test your knowledge and track your score.</p>
+
+    <button id="quizBtn">Start Quiz</button>
+    <div id="quizContainer"></div>
+
+  </div>
+  <div class="topics-card">
+
+    <h3>📚 Topics From Your Notes</h3>
+
+    <p>Your important topics will appear here.</p>
+
+    <ul id="topicsList">
+        <li>No topics extracted yet.</li>
+    </ul>
+
+  </div>
+  <div class="revision-card">
+
+    <h3>🔄 Revision Suggestions</h3>
+
+    <p>Topics that need more practice will appear here.</p>
+
+    <ul id="revisionList">
+        <li>No revision suggestions yet.</li>
+    </ul>
+
+  </div>
+  <div class="progress-card">
+
+    <h3>📊 Your Progress</h3>
+
+    <p id="score">Score: 0</p>
+
+    <p id="weakTopics">Weak Topics: —</p>
+
+  </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

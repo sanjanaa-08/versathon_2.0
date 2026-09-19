@@ -1,0 +1,163 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    text-align: center;
+    padding: 50px;
+}
+
+h1 {
+    color: #2c3e50;
+}
+h1 {
+    color: #2c3e50;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #555;
+    font-size: 18px;
+}
+button {
+    background-color: #502c4d;
+    color: oklab(100% 0 -0.00011);
+    border: none;
+    padding: 12px 24px;
+    margin: 10px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+button:hover {
+    opacity: 0.8;
+}
+input[type="file"] {
+    margin: 20px;
+    padding: 10px;
+    font-size: 16px;
+}
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 40px;
+    border-radius: 15px;
+}
+.upload-box {
+    background-color: #f8f9fc;
+    border: 2px dashed #2c3e50;
+    padding: 25px;
+    margin: 25px 0;
+    border-radius: 12px;
+}
+
+.upload-box h3 {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.upload-box p {
+    font-size: 16px;
+    color: #666;
+}
+.activity-card {
+    background-color: hwb(0 100% 0%);
+    border: 1px solid hwb(0 87% 13%);
+    padding: 25px;
+    margin: 20px 0;
+    border-radius: 12px;
+}
+
+.activity-card h3 {
+    color: #2c3e50;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.activity-card p {
+    color: #666;
+    font-size: 16px;
+}
+.progress-card {
+    background-color: #f8f9fc;
+    border: 1px solid #ddd;
+    padding: 25px;
+    margin-top: 25px;
+    border-radius: 12px;
+}
+
+.progress-card h3 {
+    color: #2c3e50;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.progress-card p {
+    font-size: 18px;
+    color: #555;
+}
+.topics-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 25px;
+    margin-top: 25px;
+    border-radius: 12px;
+    text-align: left;
+}
+
+.topics-card h3 {
+    color: #2c3e50;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.topics-card p {
+    color: #666;
+    font-size: 16px;
+    text-align: center;
+}
+
+.topics-card ul {
+    margin-top: 20px;
+    padding-left: 25px;
+}
+
+.topics-card li {
+    color: #555;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+.revision-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 25px;
+    margin-top: 25px;
+    border-radius: 12px;
+    text-align: left;
+}
+
+.revision-card h3 {
+    color: #2c3e50;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.revision-card p {
+    color: #666;
+    font-size: 16px;
+    text-align: center;
+}
+
+.revision-card ul {
+    margin-top: 20px;
+    padding-left: 25px;
+}
+
+.revision-card li {
+    color: #555;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
